@@ -1,0 +1,81 @@
+<aside class="app-sidebar bg-primary-subtle shadow" data-bs-theme="dark">
+
+    <div class="sidebar-brand">
+
+        <a href="./index.html" class="brand-link">
+
+            <img style="margin-left: -2rem;" src="{{ asset('img/logo.png') }}" alt="lara start Logo"
+                class="brand-image opacity-100 shadow pr-2" />
+
+            <span class="brand-text ">LARA START</span>
+        </a>
+
+    </div>
+
+
+    <div class="image d-flex mt-3">
+
+        <img style="margin-left: 1.5rem;" width="20%" src="{{ asset('img/profile.png') }}"
+            class="img-circle elevation-2 pl-3" alt="User Image">
+        <a style="text-decoration: none; color:white; margin-top: 0.5rem; margin-left: 1rem;" href="#"
+            class="d-block fs-5 ">{{ Auth::user()->name }}</a>
+    </div>
+
+    <div class="sidebar-wrapper">
+        <nav class="mt-2">
+
+            <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+
+                <li class="nav-item active">
+                    <a href="./generate/theme.html" class="nav-link active">
+                        <i class="nav-icon bi bi-speedometer"></i>
+                        <p>Dashboard </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa fa-cog"></i>
+                        <p>
+                            Management
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview" style="display: none;">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Simple Tables</p>
+                            </a>
+                        </li>
+                      
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>jsGrid</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item active">
+                    <a href="" class="nav-link ">
+                        <i class="nav-icon fa fa-user"></i>
+                        <p>Profile </p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item active">
+                    <a href="" class="nav-link ">
+                        <i class="nav-icon fa fa-power-off"></i>
+                        <p>Log out </p>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+</aside>
